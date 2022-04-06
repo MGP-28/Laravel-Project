@@ -17,7 +17,7 @@ class CreateAddressesTable extends Migration
             $table->id();
             $table->string('address');
             $table->string('city');
-            $table->string('country');
+            $table->foreignId('country_id')->constrained();
             $table->string('postalCode');
             $table->timestamps();
         });
