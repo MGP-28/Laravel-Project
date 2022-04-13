@@ -1,6 +1,6 @@
 @extends('master.main')
 
 @section('content')
-    @component('components.table.tablePlayers',['players' => $players, 'title' => 'Players'])
+    @component('components.table.tablePlayerDetail',['player' => $player])
     @endcomponent
 @endsection
