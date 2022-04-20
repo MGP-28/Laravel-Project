@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Player;
+use App\Car;
 use Illuminate\Http\Request;
 
-class PlayerController extends Controller
+class CarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class PlayerController extends Controller
      */
     public function index()
     {
-        $players = Player::all();
-        return view('pages.players.index', ['players' => $players]);
+        //
     }
 
     /**
@@ -42,21 +41,21 @@ class PlayerController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Player  $player
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function show(Player $player)
+    public function show(Car $car)
     {
-        return view('pages.players.show', ['player' => $player]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Player  $player
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function edit(Player $player)
+    public function edit(Car $car)
     {
         //
     }
@@ -65,10 +64,10 @@ class PlayerController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Player  $player
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Player $player)
+    public function update(Request $request, Car $car)
     {
         //
     }
@@ -76,10 +75,10 @@ class PlayerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Player  $player
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Player $player)
+    public function destroy(Car $car)
     {
         //
     }
